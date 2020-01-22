@@ -1,0 +1,17 @@
+push ebp
+mov ebp, esp
+..
+..
+..
+mov esp, ebp
+pop ebp
+
+
+push dword 10 <=>(echiv){ sub esp, 4
+						{mov [esp], 10
+
+pop eax <=>(echiv)	{mov eax, [esp]
+					{add esp, 4
+
+DO NOT DO "push dl". Putem da push la numai 2 sau 4 bytes
+CAN DO: push dx, push edx, push dword, push word
